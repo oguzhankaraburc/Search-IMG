@@ -26,7 +26,7 @@ function search(e){
     fetch(`https://api.unsplash.com/search/photos?query=${value}` , {
         method : "GET",
         headers : {
-            Authorization : "Client-ID IYc2IhTo1v3zUCf8d1L5J2FEaWGZLxtUOeOVFMFywHM"
+            Authorization : Client-ID ${UNSPLASH_ACCESS_KEY}
         }
     })
     .then((res)=>res.json())
